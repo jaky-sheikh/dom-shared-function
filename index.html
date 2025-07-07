@@ -26,11 +26,11 @@
                 <button class="btn btn-secondary">Cash Out</button>
             </div>
             <div class="divider"></div>
-            <!-- form section -->
-            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <!-- add money form section -->
+            <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <div class="card-body">
                     <fieldset class="fieldset">
-                        <label class="label">Amount</label>
+                        <label class="label">Add Money Amount</label>
                         <input id="add-money-input" type="text" class="input" placeholder="Enter Amount" />
                         <label class="label">Pin</label>
                         <input id="add-money-pin" type="password" class="input" placeholder="Pin" />
@@ -38,9 +38,23 @@
                     </fieldset>
                 </div>
             </div>
+            <!-- cash out form section -->
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                        <label class="label">Cash Out Amount</label>
+                        <input id="cash-out-input" type="text" class="input" placeholder="Enter Amount" />
+                        <label class="label">Pin</label>
+                        <input id="cash-out-pin" type="password" class="input" placeholder="Pin" />
+                        <button id="cash-out-btn" class="btn btn-neutral mt-4">Add Money</button>
+                    </fieldset>
+                </div>
+            </div>
+
         </div>
     </main>
     <script src="js/addMoney.js"></script>
+    <script src="JS/cashOut.js"></script>
     <script src="utilities.js"></script>
 </body>
 

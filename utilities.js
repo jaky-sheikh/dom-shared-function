@@ -1,3 +1,4 @@
+// add money form section 
 function getInputFieldValueById(id) {
     const inputValue = document.getElementById(id).value;
     const inputNumber = parseFloat(inputValue);
@@ -5,6 +6,7 @@ function getInputFieldValueById(id) {
     return inputNumber;
 }
 
+// stat section 
 function getTextFieldValueById(id) {
     const textValue = document.getElementById(id).innerText;
     const textNumber = parseFloat(textValue);
