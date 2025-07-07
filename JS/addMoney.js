@@ -4,5 +4,6 @@ document.getElementById('add-money-btn')
         console.log('btn clicked')
 
         const addMoney = getInputFieldValueById('add-money-input');
-        console.log('add money inside addMoney.js', addMoney);
+        const pinNumber = getInputFieldValueById('add-money-pin');
+        console.log('add money inside addMoney.js', addMoney, pinNumber);
     })
