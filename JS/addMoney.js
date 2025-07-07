@@ -8,7 +8,11 @@ document.getElementById('add-money-btn')
 
         if (pinNumber === 1234) {
             const balance = getTextFieldValueById('account-balance');
-            console.log('My current balance is ', balance);
+            const newBalance = balance + addMoney;
+
+            document.getElementById('account-balance').innerText = newBalance;
+
+            console.log('My current balance is ', balance, newBalance);
         }
         else {
             alert('Failed to add money');
