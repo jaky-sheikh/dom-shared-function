@@ -6,6 +6,12 @@ document.getElementById('add-money-btn')
         const addMoney = getInputFieldValueById('add-money-input');
         const pinNumber = getInputFieldValueById('add-money-pin');
 
+        // data validation 
+        if (isNaN(addMoney)) {
+            alert('Failed to add money.')
+            return;
+        }
+
         if (pinNumber === 1234) {
             const balance = getTextFieldValueById('account-balance');
             const newBalance = balance + addMoney;
@@ -15,7 +21,7 @@ document.getElementById('add-money-btn')
             // add to transaction history
             const p = document.createElement('p');
             p.innerText = `Added: ${addMoney} Tk. New Balance: ${newBalance}`;
-            console.log(p);
+            // console.log(p);
 
             // should be a common function
             document.getElementById('transaction-container').appendChild(p);
